@@ -24,7 +24,7 @@ export default function Home() {
 
           <div>
             <a
-              href="https://certificates.soyhenry.com/cert?id=b8a0a083-5052-4128-b832-6fdb4dfc8201 "
+              href="https://certificates.soyhenry.com/cert?id=b8a0a083-5052-4128-b832-6fdb4dfc8201"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -115,7 +115,12 @@ export default function Home() {
             </div>
           </a>
 
-          <a className={styles.card} target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://certificates.soyhenry.com/cert?id=b8a0a083-5052-4128-b832-6fdb4dfc8201"
+            className={styles.card}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <h2 className={inter.className}>
               Mis Hablidades <span>-&gt;</span>
             </h2>
