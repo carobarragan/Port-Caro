@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  background-color: #1b1c1f;
+  height: 200px;
+  margin: auto;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.social {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 6em;
+  transition: all ease-in-out 1s;
+}
+.text {
+  color: azure;
+  font-display: relative;
+}
+@media (prefers-color-scheme: dark) {
+  .container {
+    filter: invert(1);
+  }
+}

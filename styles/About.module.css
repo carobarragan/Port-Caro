@@ -1,0 +1,125 @@
+.page {
+  height: 100%;
+  /* width: 100%; */
+  /* margin: 5rem 0 0 0; */
+  position: relative;
+  align-items: center;
+  display: flex;
+  margin: auto;
+  font-size: 20px;
+}
+.page:hover {
+  background-color: var(--primary-glow);
+  box-shadow: 0px 0px 0px 0px var(--primaryColor2);
+  border: 1px solid var(--primary-glow);
+  color: var(--mainBg);
+  color: var(--mainBg);
+  text-shadow: 0px 0px 0px var(--primary-glow);
+}
+.container {
+  width: 100%;
+  background-color: #ffffff39;
+  height: 200px;
+  margin: auto;
+  padding: 4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+.container:hover {
+  background-color: var(--primaryColor3);
+  box-shadow: 0px 0px 0px 0px var(--primaryColor2);
+  border: 1px solid var(--primaryColor3);
+  /* color: white; */
+}
+.divider {
+  width: 500px;
+  min-height: 1px;
+  background-color: #ffffff39;
+  position: center;
+}
+.text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-shadow: -2.5px 2.5px 0.5px var(--primary);
+  font-size: 1.8rem;
+  max-width: 500px;
+  color: var(--mainBlack);
+  font-weight: 500;
+  margin-bottom: 2em;
+}
+.linkedin {
+  cursor: pointer;
+  opacity: 1;
+  position: relative;
+  transition: all ease-in-out 0.2s;
+}
+.github {
+  cursor: pointer;
+  opacity: 1;
+  position: relative;
+  transition: all ease-in-out 1s;
+}
+.perfil {
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: -10px 10px 0px gray;
+  justify-content: space-around;
+  font-size: 1.6rem;
+  align-items: center;
+  flex-direction: column;
+}
+.titulo {
+  position: relative;
+  text-align: center;
+
+  font-size: 35px;
+  color: var(--mainBg);
+}
+.boton {
+  background-color: #0000001a;
+  background-position: 220px;
+  box-shadow: 0 10px 25px gray;
+  width: 180px;
+  height: 80px;
+  position: unset;
+}
+
+.boton:hover {
+  opacity: 0.7;
+}
+
+.botonA {
+  margin: 2em 0 0 0;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+  text-decoration: none;
+  color: var(--mainBg);
+  font-size: 2.5rem;
+  font-weight: 600;
+  border-radius: 3px solid black;
+}
+.botonA:hover {
+  color: blue;
+  text-shadow: -2.5px 2.5px 1px var(--variant3);
+}
+.contenedor {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+.imagen {
+  border-radius: 10px;
+  width: 450px;
+  display: inline-block;
+  transition: transform 200ms;
+  box-shadow: -10px 10px 0px #0000001a;
+}
+@media (max-width: 768px) {
+  .divider {
+    width: 250px;
+  }
+}
