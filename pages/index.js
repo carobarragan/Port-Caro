@@ -17,10 +17,10 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <p>
+          {/* <p>
             Carolina Magali Barragàn &nbsp;
             <code className={styles.code}>|| Dev 💻</code>
-          </p>
+          </p> */}
 
           <div>
             <a
@@ -42,7 +42,7 @@ export default function Home() {
         </div>
         <div className={styles.titulo} width={180} height={280}>
           {" "}
-          Les presento mi portfolio
+          Carolina Barragàn
         </div>
 
         <div className={styles.grid}>
