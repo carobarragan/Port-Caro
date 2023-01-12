@@ -47,7 +47,7 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a
-            href="https://docs.google.com/document/d/1z8mB5H1XHw0eIpxYNLegtmur6pkDGfJ9ZsrynnsPgZ4/edit"
+            href="https://docs.google.com/document/d/1Aan5a05YzYeUkeeRzSY2xVZL2gXKX1n2XbP8hIj-rRQ/edit"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
