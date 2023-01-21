@@ -4,6 +4,7 @@ import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Footer from "../componentes/About/Footer";
 import About from "./about";
+import Skill from "./Skill";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -101,17 +102,16 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            {/* <h2 className={inter.className}>
               Mis Hablidades <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
               .JavaScript, Redux, React, Next.js, Node, SQL, PostgreSQL, Github,
               HTML5, styledComponets
-            </p>
-            {/* <div>
-              <Image href="html-5--v.png" width={24} height={24} />
-              <p>HTML.</p>
-            </div> */}
+            </p> */}
+            <div>
+              <Skill></Skill>
+            </div>
           </a>
         </div>
       </main>

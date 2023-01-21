@@ -1,0 +1,95 @@
+.skillBox {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 50px 0 40px;
+  padding: 8px;
+  gap: 12px;
+  scroll-behavior: smooth;
+  font-size: 100%;
+}
+@media (max-width: 1100px) {
+  .skillBox {
+    justify-content: space-evenly;
+    width: 90%;
+    min-width: 10rem;
+    gap: 8px;
+  }
+}
+.text {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-family: "montserrat";
+  margin-top: 10px;
+  font-size: 500;
+}
+@media (max-width: 640px) {
+  .text {
+    text-align: center;
+    width: 150px;
+    font-size: 15px;
+  }
+}
+.principal {
+  width: 100%;
+  background-color: #ebeeee;
+  padding-top: 4vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  /* padding: 0; */
+  scroll-behavior: smooth;
+  font-size: 100%;
+  padding: 8px;
+  gap: 4px;
+}
+
+@media (max-width: 850px) {
+  .container {
+    width: 150px;
+    height: 150px;
+  }
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  background-color: #fff;
+  box-shadow: 0 0 15px 5px rgb(0 0 0 /20%);
+  flex-direction: column;
+}
+@media (max-width: 400px) {
+  .container {
+    width: 45%;
+    margin-left: 0;
+    height: 110px;
+  }
+}
+.titulo {
+  display: block;
+  margin-block-start: 1.33em;
+  margin-block-end: 1.33em;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  font-weight: bold;
+}
+.imagen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  box-shadow: 0 0 15px 5px rgb(0 0 0 / 20%);
+  flex-direction: column;
+}
+@media (max-width: 400px) {
+  .imagen {
+    width: 45%;
+    margin-left: 0;
+    height: 110px;
+  }
+}
