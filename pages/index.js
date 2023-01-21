@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
 import Footer from "../componentes/About/Footer";
+import About from "./about";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -40,40 +41,18 @@ export default function Home() {
             </a>
           </div>
         </div>
-        <div className={styles.titulo} width={180} height={280}>
-          {" "}
-          Carolina Barragàn
+        <div className={styles.fondo}>
+          <div className={styles.titulo} width={180} height={280}>
+            {" "}
+            Carolina Barragàn
+          </div>
+        </div>
+        <br />
+        <div>
+          <About />
         </div>
 
-        <div className={styles.grid}>
-          <a
-            href="https://docs.google.com/document/d/1Aan5a05YzYeUkeeRzSY2xVZL2gXKX1n2XbP8hIj-rRQ/edit"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={inter.className}>
-              Sobri Mi <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              Desarrolladora Fullstack JavaScript. Realicé un bootcamp de más de
-              800 hs. de estudio intensivo que me preparó para desempeñarme como
-              desarrolladora Fullstack. Dentro del curso aprendí desde lo básico
-              hasta desarrollar una aplicación en equipo.Soy una persona
-              proactiva, con buena disposición, siempre dispuesta, respetuosa y
-              por sobre todo con ganas de trabajar&nbsp; , cv.
-            </p>
-            <div>
-              <Image
-                src="/perfil.jpeg"
-                // alt="13"
-                width={240}
-                height={171}
-                priority
-              />
-            </div>
-          </a>
-
+        <div>
           <a
             href="https://github.com/carobarragan/Proyecto-individua.git"
             className={styles.card}
@@ -128,6 +107,10 @@ export default function Home() {
               .JavaScript, Redux, React, Next.js, Node, SQL, PostgreSQL, Github,
               HTML5, styledComponets
             </p>
+            {/* <div>
+              <Image href="html-5--v.png" width={24} height={24} />
+              <p>HTML.</p>
+            </div> */}
           </a>
         </div>
       </main>

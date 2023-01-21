@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 6rem;
+  padding: 10px;
   min-height: 100vh;
 }
 
@@ -113,18 +113,41 @@
   transform: translateZ(0);
 }
 .titulo {
-  position: relative;
+  /* position: relative;
   text-align: center;
   padding: 8rem 0;
   font-size: 35px;
-  color: var(--mainBg);
+  color: var(--mainBg); */
+
+  padding: 10px;
+  display: flex;
+  list-style: none;
+  border: 1px solid black;
+  border-radius: 8px;
+  padding: 3rem;
+  gap: 4px;
+  background-position: center;
 }
 .titulo:hover {
-  opacity: 0.7;
+  color: magenta;
+  text-decoration: underline;
+  display: center;
+  /* opacity: 0.7;
   transform: translateX(4px);
   color: blue;
-  text-shadow: -2.5px 2.5px 1px var(--variant3);
+  text-shadow: -2.5px 2.5px 1px var(--variant3); */
 }
+/* .fondo {
+  background-image: url("https://media.istockphoto.com/id/1296308898/es/foto/elegante-escritorio-espacio-de-trabajo-sobre-fondo-negro.jpg?b=1&s=170667a&w=0&k=20&c=QRe45QcolMEMgUm368soByBzr2WaCg-ULP8uhLkMcYI=");
+  color: wheat;
+  width: 300;
+  height: 300;
+}
+@media (max-width: 700px) {
+  .fondo {
+    padding: 2rem;
+  }
+} */
 
 .logo,
 .thirteen {
@@ -284,6 +307,9 @@
     z-index: 1;
   }
 }
+.Skill {
+  background-image: url("https://img.icons8.com/color/452/html-5--v1.png");
+}
 
 /* Tablet and Smaller Desktop */
 @media (min-width: 701px) and (max-width: 1120px) {
@@ -309,5 +335,10 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+@media (max-width: 700px) {
+  .about {
+    padding: 8rem;
   }
 }

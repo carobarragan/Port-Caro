@@ -18,8 +18,8 @@
 }
 .container {
   width: 100%;
-  background-color: #ffffff39;
-  height: 200px;
+  background-color: gray;
+  height: 400px;
   margin: auto;
   padding: 4em;
   display: flex;
@@ -27,12 +27,12 @@
   align-items: center;
   gap: 2em;
 }
-.container:hover {
+/* .container:hover {
   background-color: var(--primaryColor3);
   box-shadow: 0px 0px 0px 0px var(--primaryColor2);
   border: 1px solid var(--primaryColor3);
   /* color: white; */
-}
+/* }  */
 .divider {
   width: 500px;
   min-height: 1px;
@@ -71,19 +71,21 @@
   flex-direction: column;
 }
 .titulo {
-  position: relative;
-  text-align: center;
-
-  font-size: 35px;
-  color: var(--mainBg);
+}
+.titulo:hover {
+  opacity: 0.7;
 }
 .boton {
-  background-color: #0000001a;
+  background-color: #fff;
   background-position: 220px;
+  border: 3px solid black;
+  border-radius: 1px;
+  padding: 4px;
   box-shadow: 0 10px 25px gray;
-  width: 180px;
-  height: 80px;
+  width: 100px;
+  height: 50px;
   position: unset;
+  left: 0;
 }
 
 .boton:hover {
@@ -105,21 +107,78 @@
   text-shadow: -2.5px 2.5px 1px var(--variant3);
 }
 .contenedor {
+  font-size: 100%;
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
   margin: auto;
 }
+.description {
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300px;
+  font-size: 19px;
+  text-align: justify;
+}
+@media (max-width: 700px) {
+  .container {
+    padding: 2rem 2.5rem;
+  }
+
+  .textContainer {
+    padding: 0rem 0rem;
+    grid-template-columns: repeat(2, 50%);
+    width: 1250px;
+    height: 1250px;
+  }
+
+  .description {
+    padding: auto;
+    width: 310px;
+    height: 350px;
+  }
+  @media (max-width: 700px) {
+    .boton {
+      filter: invert(1) drop-shadow(0 0 0.3rem black);
+    }
+  }
+}
+.imagenContainer {
+  flex: 1 1;
+  display: flex;
+}
+
+.textContainer {
+  max-width: 700px;
+  margin-left: 50px;
+  display: initial;
+  /* background-position; */
+  background-position-x: 50%;
+  background-position-y: center;
+  background-size: cover;
+}
 .imagen {
+  background-position: 50%;
+  background-position-x: 50%;
+  background-position-y: center;
+  background-size: cover;
   border-radius: 10px;
-  width: 450px;
-  display: inline-block;
+  width: 250px;
   transition: transform 200ms;
   box-shadow: -10px 10px 0px #0000001a;
 }
-@media (max-width: 768px) {
-  .divider {
-    width: 250px;
+
+.logo,
+.thirteen img {
+  filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(560deg);
+  }
+  to {
+    transform: rotate(0deg);
   }
 }
