@@ -51,6 +51,7 @@ export default function Home() {
         <div>
           <About />
         </div>
+        <br />
 
         <div>
           <a
