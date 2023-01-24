@@ -56,7 +56,7 @@ export default function Home() {
 
         <div>
           <a
-            href="https://github.com/carobarragan/Proyecto-individua.git"
+            href="https://pi-caro-barragan.netlify.app/"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
