@@ -347,3 +347,31 @@
     padding: 8rem;
   }
 }
+.carrusel {
+  background-size: cover;
+  background-position: 50%;
+  display: flex;
+}
+.carrusel:hover {
+  filter: invert(1);
+  background: rgba(var(--card-rgb), 0.1);
+  border: 1px solid rgba(var(--card-border-rgb), 0.15);
+}
+.carruselP {
+  display: grid;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-size: 20px;
+}
+@media (max-width: 550px) {
+  .carrusel {
+    height: 80px;
+  }
+}
+@media (max-width: 1000px) {
+  .carrusel {
+    width: 100%;
+  }
+}

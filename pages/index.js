@@ -53,15 +53,36 @@ export default function Home() {
           <About />
         </div>
         <br />
+        <br />
+        <br />
+        <br />
+        <br />
 
         <div>
           <a
-            href="https://pi-caro-barragan.netlify.app/"
-            className={styles.card}
+            href="https://moza-servicio.vercel.app/"
+            className={styles.carruselP}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className={styles.carrusel}>
+              Pagina de Servicio de Moza<span>-&gt;</span>
+            </h2>
+            <p className={inter.className}>
+              Pagina de servicio realizada con Next.js, que es un framework de
+              React + css
+            </p>
+            <div>
+              <Image src="/SM.jpg" width={240} height={171} priority />
+            </div>
+          </a>
+          <a
+            href="https://pi-caro-barragan.netlify.app/"
+            className={styles.carruselP}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <h2 className={styles.carrusel}>
               Proyecto Individual<span>-&gt;</span>
             </h2>
             <p className={inter.className}>
@@ -75,11 +96,11 @@ export default function Home() {
 
           <a
             href="https://wetravel-app.vercel.app/"
-            className={styles.card}
+            className={styles.carruselP}
             target="_blank"
             rel="noopener noreferrer"
           >
-            <h2 className={inter.className}>
+            <h2 className={styles.carrusel}>
               Proyecto Grupal <span>-&gt;</span>
             </h2>
             <p className={inter.className}>
@@ -102,13 +123,6 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            {/* <h2 className={inter.className}>
-              Mis Hablidades <span>-&gt;</span>
-            </h2>
-            <p className={inter.className}>
-              .JavaScript, Redux, React, Next.js, Node, SQL, PostgreSQL, Github,
-              HTML5, styledComponets
-            </p> */}
             <div>
               <Skill></Skill>
             </div>
