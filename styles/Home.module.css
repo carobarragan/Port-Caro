@@ -347,11 +347,52 @@
     padding: 8rem;
   }
 }
+.nuevo {
+  animation-fill-mode: both;
+  animation-duration: 1000ms;
+  animation-delay: 500ms;
+  animation-iteration-count: 1;
+  opacity: 1;
+  animation-name: react-reveal-670824210740849-4;
+}
+.defini {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 .carrusel {
-  background-size: cover;
+  /* background-size: cover;
   background-position: 50%;
   display: flex;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem; */
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  text-align: left;
 }
+.foto {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  opacity: 1;
+  transition: opacity 500ms ease 0s;
+  /* vertical-align: middle;
+  border-style: none; */
+}
+
 .carrusel:hover {
   filter: invert(1);
   background: rgba(var(--card-rgb), 0.1);

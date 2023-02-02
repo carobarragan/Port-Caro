@@ -5,6 +5,7 @@ import styles from "../styles/Home.module.css";
 import Footer from "../componentes/About/Footer";
 import About from "./about";
 import Skill from "./Skill";
+import Carousel from "react-bootstrap/Carousel";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -58,7 +59,7 @@ export default function Home() {
         <br />
         <br />
 
-        <div>
+        <div className={styles.nuevo}>
           <a
             href="https://moza-servicio.vercel.app/"
             className={styles.carruselP}
@@ -68,10 +69,12 @@ export default function Home() {
             <h2 className={styles.carrusel}>
               Pagina de Servicio de Moza<span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
-              Pagina de servicio realizada con Next.js, que es un framework de
-              React + css
-            </p>
+            <div>
+              <p className={styles.defini}>
+                Pagina de servicio realizada con Next.js, que es un framework de
+                React + css
+              </p>
+            </div>
             <div>
               <Image src="/SM.jpg" width={240} height={171} priority />
             </div>
@@ -85,10 +88,12 @@ export default function Home() {
             <h2 className={styles.carrusel}>
               Proyecto Individual<span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
-              Dogs Es una aplicación de adopcion de perros.Hecho Redux, Express,
-              PostgreSQL, Sequelize,entre otros.&nbsp;
-            </p>
+            <div>
+              <p className={styles.defini}>
+                Dogs Es una aplicación de adopcion de perros.Hecho Redux,
+                Express, PostgreSQL, Sequelize,entre otros.&nbsp;
+              </p>
+            </div>
             <div>
               <Image src="/pi.jpeg" width={240} height={171} priority />
             </div>
@@ -103,15 +108,17 @@ export default function Home() {
             <h2 className={styles.carrusel}>
               Proyecto Grupal <span>-&gt;</span>
             </h2>
-            <p className={inter.className}>
-              Es una aplicación de viaje, donde cuenta con tres perfiles;
-              Administrador, este tiene el control total de la aplicacion a
-              travès de un panel. Anfitrión, pone a disposicion el servicio;
-              Huesped, dispone de la adquisiciòn del servicio y ademas puede
-              postear imagenes en tiempo reales para que las demas personas
-              puedan ver imagenes del hotel tomadas por clientes. Wetravel es un
-              app para brindarles comodidades a todos..
-            </p>
+            <div>
+              <p className={styles.defini}>
+                Es una aplicación de viaje, donde cuenta con tres perfiles;
+                Administrador, este tiene el control total de la aplicacion a
+                travès de un panel. Anfitrión, pone a disposicion el servicio;
+                Huesped, dispone de la adquisiciòn del servicio y ademas puede
+                postear imagenes en tiempo reales para que las demas personas
+                puedan ver imagenes del hotel tomadas por clientes. Wetravel es
+                un app para brindarles comodidades a todos..
+              </p>
+            </div>
             <div>
               <Image src="/pg.jpeg" width={240} height={171} priority />
             </div>
