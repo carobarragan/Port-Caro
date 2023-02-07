@@ -80,7 +80,7 @@ export default function Home() {
             </div>
           </a>
           <a
-            href="https://pi-caro-barragan.netlify.app/"
+            href="https://github.com/carobarragan/PI-Dogs-Caro.git"
             className={styles.carruselP}
             target="_blank"
             rel="noopener noreferrer"
