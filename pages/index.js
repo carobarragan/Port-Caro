@@ -5,8 +5,8 @@ import styles from "../styles/Home.module.css";
 import Footer from "../componentes/About/Footer";
 import About from "./about";
 import Skill from "./Skill";
-import Carousel from "react-bootstrap/Carousel";
-
+import GithubIcon from "../componentes/About/Github";
+import LinkedInIcon from "../componentes/Linkedln";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -19,38 +19,38 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <div className={styles.description}>
-          {/* <p>
-            Carolina Magali Barragàn &nbsp;
-            <code className={styles.code}>|| Dev 💻</code>
-          </p> */}
-
-          <div>
-            <a
-              href="https://certificates.soyhenry.com/cert?id=b8a0a083-5052-4128-b832-6fdb4dfc8201"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Full Stack Web Developer{" "}
-              <Image
-                src="/codigo.png"
-                alt="Vercel Logo"
-                className={styles.vercelLogo}
-                width={100}
-                height={84}
-                priority
-              />
-            </a>
-          </div>
-        </div>
         <div className={styles.fondo}>
           <div className={styles.titulo} width={180} height={280}>
             {" "}
             Carolina Barragàn
           </div>
+          <div className={styles.subtitulo}>
+            <p>
+              Una desarrolladora Full Stack muy apasionada y motivada con agiles
+              Metodologies. Siempre lista para aplicar lo que sé y aprender
+              sobre lo que no sé 💻.
+            </p>
+          </div>
+          <div className={styles.icons}>
+            <a
+              href="https://github.com/carobarragan"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GithubIcon />
+            </a>
+            <a
+              rel="noopener noreferrer"
+              target="_blank"
+              href="https://www.linkedin.com/in/caro-barragan/"
+            >
+              <LinkedInIcon />
+            </a>
+          </div>
         </div>
+
         <br />
-        <div>
+        <div className={styles.About}>
           <About />
         </div>
         <br />
@@ -113,10 +113,7 @@ export default function Home() {
                   Es una aplicación de viaje, donde cuenta con tres perfiles;
                   Administrador, este tiene el control total de la aplicacion a
                   travès de un panel. Anfitrión, pone a disposicion el servicio;
-                  Huesped, dispone de la adquisiciòn del servicio y ademas puede
-                  postear imagenes en tiempo reales para que las demas personas
-                  puedan ver imagenes del hotel tomadas por clientes. Wetravel
-                  es un app para brindarles comodidades a todos..
+                  Huesped, dispone de la adquisiciòn del servicio.
                 </p>
               </div>
               <div className={styles.foto}>
