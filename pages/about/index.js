@@ -25,7 +25,7 @@ export default function About() {
             proactiva, con buena disposición, siempre dispuesta, respetuosa y
             por sobre todo con ganas de trabajar&nbsp; , cv.
           </p>
-          <div className={styles.boton}>
+          <div className={styles.button}>
             <a
               href="https://docs.google.com/document/d/1Aan5a05YzYeUkeeRzSY2xVZL2gXKX1n2XbP8hIj-rRQ/edit"
               className={styles.center}

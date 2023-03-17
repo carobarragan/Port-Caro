@@ -58,82 +58,82 @@ export default function Home() {
         <br />
         <br />
         <br />
+        <div className={styles.proyectos}>
+          <div className={styles.nuevo}>
+            <a
+              href="https://moza-servicio.vercel.app/"
+              className={styles.carruselP}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h2 className={styles.carrusel}>
+                Pagina de Servicio de Moza<span>-&gt;</span>
+              </h2>
+              <div>
+                <p className={styles.defini}>
+                  Pagina de servicio realizada con Next.js, que es un framework
+                  de React + css
+                </p>
+              </div>
+              <div className={styles.foto}>
+                <Image src="/SM.jpg" width={240} height={171} priority />
+              </div>
+            </a>
+            <a
+              href="https://github.com/carobarragan/PI-Dogs-Caro.git"
+              className={styles.carruselP}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h2 className={styles.carrusel}>
+                Proyecto Individual<span>-&gt;</span>
+              </h2>
+              <div>
+                <p className={styles.defini}>
+                  Dogs Es una aplicación de adopcion de perros.Hecho Redux,
+                  Express, PostgreSQL, Sequelize,entre otros.&nbsp;
+                </p>
+              </div>
+              <div className={styles.foto}>
+                <Image src="/pi.jpeg" width={240} height={171} priority />
+              </div>
+            </a>
 
-        <div className={styles.nuevo}>
-          <a
-            href="https://moza-servicio.vercel.app/"
-            className={styles.carruselP}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={styles.carrusel}>
-              Pagina de Servicio de Moza<span>-&gt;</span>
-            </h2>
-            <div>
-              <p className={styles.defini}>
-                Pagina de servicio realizada con Next.js, que es un framework de
-                React + css
-              </p>
-            </div>
-            <div>
-              <Image src="/SM.jpg" width={240} height={171} priority />
-            </div>
-          </a>
-          <a
-            href="https://github.com/carobarragan/PI-Dogs-Caro.git"
-            className={styles.carruselP}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={styles.carrusel}>
-              Proyecto Individual<span>-&gt;</span>
-            </h2>
-            <div>
-              <p className={styles.defini}>
-                Dogs Es una aplicación de adopcion de perros.Hecho Redux,
-                Express, PostgreSQL, Sequelize,entre otros.&nbsp;
-              </p>
-            </div>
-            <div>
-              <Image src="/pi.jpeg" width={240} height={171} priority />
-            </div>
-          </a>
-
-          <a
-            href="https://wetravel-app.vercel.app/"
-            className={styles.carruselP}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <h2 className={styles.carrusel}>
-              Proyecto Grupal <span>-&gt;</span>
-            </h2>
-            <div>
-              <p className={styles.defini}>
-                Es una aplicación de viaje, donde cuenta con tres perfiles;
-                Administrador, este tiene el control total de la aplicacion a
-                travès de un panel. Anfitrión, pone a disposicion el servicio;
-                Huesped, dispone de la adquisiciòn del servicio y ademas puede
-                postear imagenes en tiempo reales para que las demas personas
-                puedan ver imagenes del hotel tomadas por clientes. Wetravel es
-                un app para brindarles comodidades a todos..
-              </p>
-            </div>
-            <div>
-              <Image src="/pg.jpeg" width={240} height={171} priority />
-            </div>
-          </a>
+            <a
+              href="https://wetravel-app.vercel.app/"
+              className={styles.carruselP}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h2 className={styles.carrusel}>
+                Proyecto Grupal <span>-&gt;</span>
+              </h2>
+              <div>
+                <p className={styles.defini}>
+                  Es una aplicación de viaje, donde cuenta con tres perfiles;
+                  Administrador, este tiene el control total de la aplicacion a
+                  travès de un panel. Anfitrión, pone a disposicion el servicio;
+                  Huesped, dispone de la adquisiciòn del servicio y ademas puede
+                  postear imagenes en tiempo reales para que las demas personas
+                  puedan ver imagenes del hotel tomadas por clientes. Wetravel
+                  es un app para brindarles comodidades a todos..
+                </p>
+              </div>
+              <div className={styles.foto}>
+                <Image src="/pg.jpeg" width={240} height={171} priority />
+              </div>
+            </a>
+          </div>
 
           <a
             href="https://certificates.soyhenry.com/cert?id=b8a0a083-5052-4128-b832-6fdb4dfc8201"
             className={styles.card}
             target="_blank"
             rel="noopener noreferrer"
-          >
-            <div>
-              <Skill></Skill>
-            </div>
-          </a>
+          ></a>
+        </div>
+        <div className={styles}>
+          <Skill></Skill>
         </div>
       </main>
       <div className={styles.foter}>

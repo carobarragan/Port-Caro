@@ -113,42 +113,22 @@
   transform: translateZ(0);
 }
 .titulo {
-  /* position: relative;
-  text-align: center;
-  padding: 8rem 0;
-  font-size: 35px;
-  color: var(--mainBg); */
-
-  padding: 10px;
-  display: flex;
-  list-style: none;
-  border: 1px solid black;
-  border-radius: 8px;
-  padding: 3rem;
-  gap: 4px;
-  background-position: center;
+  max-width: 24rem;
+  font-weight: 600;
+  font-size: 2rem;
 }
 .titulo:hover {
-  color: magenta;
-  text-decoration: underline;
-  display: center;
-  /* opacity: 0.7;
-  transform: translateX(4px);
-  color: blue;
-  text-shadow: -2.5px 2.5px 1px var(--variant3); */
+  color: blueviolet;
+  scale: 1.3;
+  transition: all;
+  filter: contrast(1px);
 }
-/* .fondo {
-  background-image: url("https://media.istockphoto.com/id/1296308898/es/foto/elegante-escritorio-espacio-de-trabajo-sobre-fondo-negro.jpg?b=1&s=170667a&w=0&k=20&c=QRe45QcolMEMgUm368soByBzr2WaCg-ULP8uhLkMcYI=");
-  color: wheat;
-  width: 300;
-  height: 300;
-}
+
 @media (max-width: 700px) {
   .fondo {
     padding: 2rem;
   }
-} */
-
+}
 .logo,
 .thirteen {
   position: relative;
@@ -348,23 +328,28 @@
   }
 }
 .nuevo {
-  animation-fill-mode: both;
-  animation-duration: 1000ms;
-  animation-delay: 500ms;
-  animation-iteration-count: 1;
-  opacity: 1;
-  animation-name: react-reveal-670824210740849-4;
+  display: contents;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: 22rem;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.123);
+  background-color: white;
+}
+@media (max-width: 550px) {
+  .nuevo {
+    padding: 8rem;
+    margin-left: 10px;
+    justify-content: center;
+  }
 }
 .defini {
-  margin-top: 0;
-  margin-bottom: 1rem;
-  font-family: Montserrat, sans-serif;
-  font-size: 1.6rem;
-  display: block;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
+  width: 12rem;
+}
+.descriptionAbout {
+  max-width: 500px;
+  margin: 0 auto;
 }
 .carrusel {
   /* background-size: cover;
@@ -380,24 +365,52 @@
   text-align: left;
 }
 .foto {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center center;
-  opacity: 1;
-  transition: opacity 500ms ease 0s;
-  /* vertical-align: middle;
-  border-style: none; */
+  width: 160px;
+  height: 160px;
+  border-radius: 10px;
+  opacity: 1.6;
+  margin-bottom: 1.5rem;
+  filter: grayscale(70%);
+  transition: all 800ms ease-out;
 }
-
+.foto:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  cursor: pointer;
+}
+.proyectos {
+  height: 100vh;
+  padding-top: 5.5rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 350px);
+  /* height: 100%; */
+  width: 60rem;
+  justify-content: center;
+  padding: 0rem 3rem;
+  border: #ffffff70 solid;
+  border-radius: 2rem;
+  margin-left: 1rem;
+  column-gap: 3rem;
+}
+@media screen and (max-width: 1850px) {
+  .proyectos {
+    height: 1800px;
+    padding-top: 6rem;
+    grid-template-columns: repeat(1, 350px);
+    column-gap: 0rem;
+    justify-content: center;
+    padding: 3rem 3rem;
+    align-items: center;
+    margin-left: 1rem;
+  }
+}
 .carrusel:hover {
   filter: invert(1);
   background: rgba(var(--card-rgb), 0.1);
   border: 1px solid rgba(var(--card-border-rgb), 0.15);
 }
+
 .carruselP {
   display: grid;
   box-sizing: border-box;
@@ -409,6 +422,11 @@
 @media (max-width: 550px) {
   .carrusel {
     height: 80px;
+  }
+}
+@media (max-width: 1000px) {
+  .carrusel {
+    width: 100%;
   }
 }
 @media (max-width: 1000px) {
