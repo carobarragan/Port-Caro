@@ -21,9 +21,9 @@ export default function About() {
             Desarrolladora Fullstack JavaScript. Realicé un bootcamp de más de
             800 hs. de estudio intensivo que me preparó para desempeñarme como
             desarrolladora Fullstack. Dentro del curso aprendí desde lo básico
-            hasta desarrollar una aplicación en equipo.Soy una persona
+            hasta desarrollar una aplicación en equipo. Soy una persona
             proactiva, con buena disposición, siempre dispuesta, respetuosa y
-            por sobre todo con ganas de trabajar&nbsp; , cv.
+            por sobre todo con ganas de trabajar&nbsp; ,cv.
           </p>
           <div className={styles.button}>
             <a

@@ -7,6 +7,7 @@ import About from "./about";
 import Skill from "./Skill";
 import GithubIcon from "../componentes/About/Github";
 import LinkedInIcon from "../componentes/Linkedln";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
@@ -22,12 +23,12 @@ export default function Home() {
         <div className={styles.fondo}>
           <div className={styles.titulo} width={180} height={280}>
             {" "}
-            Carolina Barragàn
+            Carolina Barragán
           </div>
           <div className={styles.subtitulo}>
             <p>
               Una desarrolladora Full Stack muy apasionada y motivada con agiles
-              Metodologies. Siempre lista para aplicar lo que sé y aprender
+              Metodologias. Siempre lista para aplicar lo que sé y aprender
               sobre lo que no sé 💻.
             </p>
           </div>
@@ -58,7 +59,33 @@ export default function Home() {
         <br />
         <br />
         <br />
+
         <div className={styles.proyectos}>
+          <div className={styles.nuevo}>
+            <a
+              href="https://precious-cendol-88d048.netlify.app/"
+              className={styles.carruselP}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <h2 className={styles.carrusel}>
+                Juego Tic-Tac<span>-&gt;</span>
+              </h2>
+              <div>
+                <p className={styles.defini}>
+                  Card de juego, realizado con React + Css; quien no lo ha
+                  jugado :)
+                </p>
+              </div>
+              <div className={styles.foto}>
+                <img src="/tac.jpg" width={366} height={240}></img>
+              </div>
+            </a>
+          </div>
+          <br />
+          <br />
+          <br />
+
           <div className={styles.nuevo}>
             <a
               href="https://moza-servicio.vercel.app/"
@@ -111,9 +138,9 @@ export default function Home() {
               <div>
                 <p className={styles.defini}>
                   Es una aplicación de viaje, donde cuenta con tres perfiles;
-                  Administrador, este tiene el control total de la aplicacion a
-                  travès de un panel. Anfitrión, pone a disposicion el servicio;
-                  Huesped, dispone de la adquisiciòn del servicio.
+                  Administrador, este tiene el control total de la aplicación a
+                  través de un panel. Anfitrión, pone a disposición el servicio;
+                  Huesped,dispone de la adquisición del servicio.
                 </p>
               </div>
               <div className={styles.foto}>
