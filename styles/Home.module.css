@@ -25,12 +25,12 @@
   gap: 0.5rem;
 }
 
-.description p {
+.proyectos {
   position: relative;
   margin: 0;
-  padding: 1rem;
+  padding: 2rem;
   background-color: rgba(var(--callout-rgb), 0.5);
-  border: 1px solid rgba(var(--callout-border-rgb), 0.3);
+  border: 3px solid rgba(var(--callout-border-rgb), 0.3);
   border-radius: var(--border-radius);
 }
 
@@ -128,9 +128,9 @@
   cursor: pointer;
   align-content: center;
   justify-content: center;
-  position: relative;
+  position: absolute;
   max-width: 220px;
-  color: white;
+  color: black;
   padding: 1rem;
 }
 .button::before {
@@ -191,7 +191,7 @@
   align-items: center;
   width: 75px;
   height: 75px;
-  padding: 25px 10px;
+  padding: 355px 350px;
   margin-left: 16px;
   transform: translateZ(0);
   border-radius: var(--border-radius);
@@ -312,8 +312,35 @@
     position: fixed;
     width: 100%;
   }
+  .tecnologias {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex: 1 1;
+    width: 100%;
+  }
+  .tecnologiaIcons {
+    background: #fff;
+    width: 22%;
+    height: 45%;
+    box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.2);
+  }
+  .contenedor {
+    display: block;
+    height: 567px;
+    min-width: 900px;
+    padding-top: 60px;
+    width: 100%;
+    background-color: #ebeeee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 270px;
+    scroll-behavior: smooth;
+    border-radius: 2px solid black;
+  }
 
-  .description p {
+  /* .proyectos {
     align-items: center;
     inset: 0 0 auto;
     padding: 2rem 1rem 1.4rem;
@@ -327,7 +354,7 @@
     );
     background-clip: padding-box;
     backdrop-filter: blur(24px);
-  }
+  } */
 
   .description div {
     align-items: flex-end;
@@ -379,14 +406,9 @@
   }
 }
 .nuevo {
-  display: contents;
-  flex-direction: column;
-  align-items: center;
-  width: 20rem;
-  height: 22rem;
-  border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.123);
-  background-color: white;
+  flex: block;
+  gap: 4px;
+  padding: 2rem;
 }
 @media (max-width: 550px) {
   .nuevo {
@@ -416,6 +438,7 @@
   text-align: left;
 }
 .foto {
+  position: block;
   width: 160px;
   height: 160px;
   border-radius: 10px;
@@ -464,31 +487,24 @@
   position: relative;
   overflow: hidden;
 }
-.proyectos {
-  height: 100vh;
-  padding-top: 5.5rem;
-  position: relative;
-  display: grid;
-  grid-template-columns: repeat(2, 350px);
-  /* height: 100%; */
-  width: 60rem;
+/* .proyectos {
+  display: block;
   justify-content: center;
-  padding: 0rem 3rem;
-  border: #ffffff70 solid;
-  border-radius: 2rem;
-  margin-left: 1rem;
-  column-gap: 3rem;
-}
+  align-items: center;
+  gap: 2px;
+  background-color: #fff;
+  box-shadow: 0 0 15px 5px rgb(0 0 0 /20%);
+  flex-direction: grid;
+  padding: 1.5rem;
+  box-sizing: border-box; */
+/* display: block;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  box-sizing: border-box; */
+/* } */
 @media screen and (max-width: 1850px) {
   .proyectos {
-    height: 1800px;
-    padding-top: 6rem;
-    grid-template-columns: repeat(1, 350px);
-    column-gap: 0rem;
-    justify-content: center;
-    padding: 3rem 3rem;
-    align-items: center;
-    margin-left: 1rem;
   }
 }
 .carrusel:hover {
@@ -519,4 +535,10 @@
   .carrusel {
     width: 100%;
   }
+}
+.letra {
+  font-family: "montserrat";
+  font-size: 15px;
+  margin-bottom: 5px;
+  border-bottom: 3px solid #20b2aa;
 }

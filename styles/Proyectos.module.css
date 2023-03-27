@@ -1,0 +1,14 @@
+.contenedor {
+  line-height: 1.5;
+  padding: 1rem;
+  justify-content: space-between;
+  flex-direction: column;
+  height: 100%;
+  display: flex;
+}
+.img {
+  display: block;
+  max-width: 100%;
+  vertical-align: middle;
+  overflow-clip-margin: content-box;
+}

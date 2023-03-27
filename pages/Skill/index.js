@@ -77,6 +77,27 @@ export default function Skill() {
           />
           <p className={styles.text}>React.</p>
         </div>
+        <div className={styles.container}>
+          <Image
+            className={styles.imagen}
+            src="/bootstrap.png"
+            width={100}
+            height={84}
+            priority
+          />
+          <p className={styles.text}>Bootstrap.</p>
+        </div>
+        <div className={styles.container}>
+          <Image
+            className={styles.imagen}
+            src="/Tailwind_CSS_Logo.svg.png"
+            width={100}
+            height={84}
+            priority
+          />
+          <p className={styles.text}>Tailwind.</p>
+        </div>
+        <br />
       </div>
     </div>
   );

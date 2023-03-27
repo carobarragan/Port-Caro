@@ -7,6 +7,7 @@ import About from "./about";
 import Skill from "./Skill";
 import GithubIcon from "../componentes/About/Github";
 import LinkedInIcon from "../componentes/Linkedln";
+import Proyecto from "./proyectos";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -60,92 +61,216 @@ export default function Home() {
         <br />
         <br />
 
-        <div className={styles.proyectos}>
-          <div className={styles.nuevo}>
-            <a
-              href="https://precious-cendol-88d048.netlify.app/"
-              className={styles.carruselP}
-              target="_blank"
-              rel="noopener noreferrer"
+        <div className={styles.proyectos} class="w-full h-full bg-gray-5">
+          <div
+            className={styles.nuevo}
+            class="flex justify-center items-center"
+          >
+            <h2
+              className={styles.carrusel}
+              class="whitespace-nowrap text-4xl md:text-5xl font-bold mb-8 md:mb-12"
             >
-              <h2 className={styles.carrusel}>
-                Juego Tic-Tac<span>-&gt;</span>
-              </h2>
-              <div>
-                <p className={styles.defini}>
-                  Card de juego, realizado con React + Css; quien no lo ha
-                  jugado :)
-                </p>
+              Juego Tic-Tac<span>-&gt;</span>
+            </h2>
+            <div class="flex flex-col md:flex-row text-xl w-full gap-5">
+              <p
+                className={styles.defini}
+                class="flex self-center whitespace-nowrap py-2 px-4 justify-center items-center gap-2 rounded-full hover:bg-white/10 transition-colors mt-8 underline underline-offset-4"
+              >
+                Card de juego, realizado con React + Css; quien no lo ha jugado
+                :)
+              </p>
+              <br />
+              <div className={styles.tecnologias}>
+                <p className={styles.letra}> Tecnologias Utilizadas:</p>
+                <div>
+                  <img
+                    src="./react.jpg"
+                    width={34}
+                    height={34}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                  <img
+                    src="./css.png"
+                    width={34}
+                    height={34}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                  <img
+                    src="./github.png"
+                    width={34}
+                    height={34}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                </div>
               </div>
-              <div className={styles.foto}>
-                <img src="/tac.jpg" width={366} height={240}></img>
-              </div>
-            </a>
+            </div>
+            <div className={styles.foto}>
+              <Image src="/tac.jpg" width={270} height={170}></Image>
+              <a
+                href="https://precious-cendol-88d048.netlify.app/"
+                className={styles.button}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {" "}
+                Ver Proyecto
+              </a>
+            </div>
           </div>
-          <br />
-          <br />
-          <br />
+        </div>
+        <br />
+        <br />
+        <br />
+        <div className={styles.proyectos} class="w-full h-full bg-gray-5">
+          <div
+            className={styles.nuevo}
+            class="flex justify-center items-center"
+          >
+            <h2 className={styles.carrusel}>
+              Pagina de Servicio de Moza<span>-&gt;</span>
+            </h2>
+            <div>
+              <p className={styles.defini}>
+                Pagina de servicio realizada con Next.js, que es un framework de
+                React + css
+              </p>
+              <br />
+              <div className={styles.tecnologias}>
+                <p className={styles.letra}> Tecnologias Utilizadas:</p>
+                <div>
+                  <img
+                    src="./next.svg"
+                    width={44}
+                    height={44}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                  <img
+                    src="./css.png"
+                    width={34}
+                    height={34}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                  <img
+                    src="./github.png"
+                    width={34}
+                    height={34}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                </div>
+              </div>
 
-          <div className={styles.nuevo}>
+              <div className={styles.foto}>
+                <Image src="/SM.jpg" width={270} height={171} priority />
+              </div>
+            </div>
             <a
               href="https://moza-servicio.vercel.app/"
-              className={styles.carruselP}
+              className={styles.button}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h2 className={styles.carrusel}>
-                Pagina de Servicio de Moza<span>-&gt;</span>
-              </h2>
-              <div>
-                <p className={styles.defini}>
-                  Pagina de servicio realizada con Next.js, que es un framework
-                  de React + css
-                </p>
-              </div>
-              <div className={styles.foto}>
-                <Image src="/SM.jpg" width={240} height={171} priority />
-              </div>
+              Ver Proyecto
             </a>
-            <a
-              href="https://github.com/carobarragan/PI-Dogs-Caro.git"
-              className={styles.carruselP}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <h2 className={styles.carrusel}>
-                Proyecto Individual<span>-&gt;</span>
-              </h2>
-              <div>
-                <p className={styles.defini}>
-                  Dogs Es una aplicación de adopcion de perros.Hecho Redux,
-                  Express, PostgreSQL, Sequelize,entre otros.&nbsp;
-                </p>
-              </div>
-              <div className={styles.foto}>
-                <Image src="/pi.jpeg" width={240} height={171} priority />
-              </div>
-            </a>
+          </div>
 
+          <div className={styles.nuevo}>
+            {/* <a
+                href="https://github.com/carobarragan/PI-Dogs-Caro.git"
+                className={styles.carruselP}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h2 className={styles.carrusel}>
+                  Proyecto Individual<span>-&gt;</span>
+                </h2>
+                <div>
+                  <p className={styles.defini}>
+                    Dogs Es una aplicación de adopcion de perros.Hecho Redux,
+                    Express, PostgreSQL, Sequelize,entre otros.&nbsp;
+                  </p>
+                </div>
+                <div className={styles.foto}>
+                  <Image src="/pi.jpeg" width={270} height={171} priority />
+                </div>
+              </a> */}
+
+            <h2 className={styles.carrusel}>
+              Proyecto Grupal <span>-&gt;</span>
+            </h2>
+            <div>
+              <p className={styles.defini}>
+                Es una aplicación de viaje, donde cuenta con tres perfiles;
+                Administrador, este tiene el control total de la aplicación a
+                través de un panel. Anfitrión, pone a disposición el servicio;
+                Huesped,dispone de la adquisición del servicio.
+              </p>
+              <br />
+              <div className={styles.tecnologias}>
+                <p className={styles.letra}> Tecnologias Utilizadas:</p>
+                <div>
+                  <img
+                    src="./react.jpg"
+                    width={44}
+                    height={44}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                  <img
+                    src="./css.png"
+                    width={34}
+                    height={34}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                  <img
+                    src="./github.png"
+                    width={34}
+                    height={34}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                  <img
+                    src="./redux.png"
+                    width={34}
+                    height={34}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                  <img
+                    src="./javascript.png"
+                    width={34}
+                    height={34}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                  <img
+                    src="./html.png"
+                    width={34}
+                    height={34}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                  <img
+                    src="./bootstrap.png"
+                    width={34}
+                    height={34}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                  <img
+                    src="./Tailwind_CSS_Logo.svg.png"
+                    width={34}
+                    height={34}
+                    className={styles.tecnologiaIcons}
+                  ></img>
+                </div>
+              </div>
+            </div>
+            <div className={styles.foto}>
+              <Image src="/pg.jpeg" width={270} height={171} priority />
+            </div>
             <a
               href="https://wetravel-app.vercel.app/"
-              className={styles.carruselP}
+              className={styles.button}
               target="_blank"
               rel="noopener noreferrer"
             >
-              <h2 className={styles.carrusel}>
-                Proyecto Grupal <span>-&gt;</span>
-              </h2>
-              <div>
-                <p className={styles.defini}>
-                  Es una aplicación de viaje, donde cuenta con tres perfiles;
-                  Administrador, este tiene el control total de la aplicación a
-                  través de un panel. Anfitrión, pone a disposición el servicio;
-                  Huesped,dispone de la adquisición del servicio.
-                </p>
-              </div>
-              <div className={styles.foto}>
-                <Image src="/pg.jpeg" width={240} height={171} priority />
-              </div>
+              {" "}
+              Ver Proyecto
             </a>
           </div>
 
