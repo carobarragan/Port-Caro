@@ -84,24 +84,24 @@ export default function Home() {
               <div className={styles.tecnologias}>
                 <p className={styles.letra}> Tecnologias Utilizadas:</p>
                 <div>
-                  <img
+                  <Image
                     src="./react.jpg"
                     width={34}
                     height={34}
                     className={styles.tecnologiaIcons}
-                  ></img>
-                  <img
+                  ></Image>
+                  <Image
                     src="./css.png"
                     width={34}
                     height={34}
                     className={styles.tecnologiaIcons}
-                  ></img>
-                  <img
+                  ></Image>
+                  <Image
                     src="./github.png"
                     width={34}
                     height={34}
                     className={styles.tecnologiaIcons}
-                  ></img>
+                  ></Image>
                 </div>
               </div>
             </div>
@@ -139,24 +139,24 @@ export default function Home() {
               <div className={styles.tecnologias}>
                 <p className={styles.letra}> Tecnologias Utilizadas:</p>
                 <div>
-                  <img
+                  <Image
                     src="./next.svg"
                     width={44}
                     height={44}
                     className={styles.tecnologiaIcons}
-                  ></img>
-                  <img
+                  ></Image>
+                  <Image
                     src="./css.png"
                     width={34}
                     height={34}
                     className={styles.tecnologiaIcons}
-                  ></img>
-                  <img
+                  ></Image>
+                  <Image
                     src="./github.png"
                     width={34}
                     height={34}
                     className={styles.tecnologiaIcons}
-                  ></img>
+                  ></Image>
                 </div>
               </div>
 
@@ -175,25 +175,6 @@ export default function Home() {
           </div>
 
           <div className={styles.nuevo}>
-            {/* <a
-                href="https://github.com/carobarragan/PI-Dogs-Caro.git"
-                className={styles.carruselP}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h2 className={styles.carrusel}>
-                  Proyecto Individual<span>-&gt;</span>
-                </h2>
-                <div>
-                  <p className={styles.defini}>
-                    Dogs Es una aplicación de adopcion de perros.Hecho Redux,
-                    Express, PostgreSQL, Sequelize,entre otros.&nbsp;
-                  </p>
-                </div>
-                <div className={styles.foto}>
-                  <Image src="/pi.jpeg" width={270} height={171} priority />
-                </div>
-              </a> */}
             <h2 className={styles.carrusel}>
               New Styles<span>-&gt;</span>
             </h2>
@@ -207,24 +188,24 @@ export default function Home() {
             <div className={styles.tecnologias}>
               <p className={styles.letra}> Tecnologias Utilizadas:</p>
               <div>
-                <img
+                <Image
                   src="./svelte.jpg"
                   width={34}
                   height={34}
                   className={styles.tecnologiaIcons}
-                ></img>
-                <img
+                ></Image>
+                <Image
                   src="./cloudinary.png"
                   width={34}
                   height={34}
                   className={styles.tecnologiaIcons}
-                ></img>
-                <img
+                ></Image>
+                <Image
                   src="./css.png"
                   width={44}
                   height={44}
                   className={styles.tecnologiaIcons}
-                ></img>
+                ></Image>
               </div>
             </div>
             <div className={styles.foto}>
@@ -256,54 +237,54 @@ export default function Home() {
               <div className={styles.tecnologias}>
                 <p className={styles.letra}> Tecnologias Utilizadas:</p>
                 <div>
-                  <img
+                  <Image
                     src="./react.jpg"
                     width={44}
                     height={44}
                     className={styles.tecnologiaIcons}
-                  ></img>
-                  <img
+                  ></Image>
+                  <Image
                     src="./css.png"
                     width={34}
                     height={34}
                     className={styles.tecnologiaIcons}
-                  ></img>
-                  <img
+                  ></Image>
+                  <Image
                     src="./github.png"
                     width={34}
                     height={34}
                     className={styles.tecnologiaIcons}
-                  ></img>
-                  <img
+                  ></Image>
+                  <Image
                     src="./redux.png"
                     width={34}
                     height={34}
                     className={styles.tecnologiaIcons}
-                  ></img>
-                  <img
+                  ></Image>
+                  <Image
                     src="./javascript.png"
                     width={34}
                     height={34}
                     className={styles.tecnologiaIcons}
-                  ></img>
-                  <img
+                  ></Image>
+                  <Image
                     src="./html.png"
                     width={34}
                     height={34}
                     className={styles.tecnologiaIcons}
-                  ></img>
-                  <img
+                  ></Image>
+                  <Image
                     src="./bootstrap.png"
                     width={34}
                     height={34}
                     className={styles.tecnologiaIcons}
-                  ></img>
-                  <img
+                  ></Image>
+                  <Image
                     src="./Tailwind_CSS_Logo.svg.png"
                     width={34}
                     height={34}
                     className={styles.tecnologiaIcons}
-                  ></img>
+                  ></Image>
                 </div>
               </div>
             </div>
