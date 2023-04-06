@@ -194,7 +194,54 @@ export default function Home() {
                   <Image src="/pi.jpeg" width={270} height={171} priority />
                 </div>
               </a> */}
-
+            <h2 className={styles.carrusel}>
+              New Styles<span>-&gt;</span>
+            </h2>
+            <div>
+              <p className={styles.defini}>
+                Les presento una pagina realizada con Cloudinary. Donde podes
+                cargar tu imagen y borrarle el fondo, asi podes descargar la
+                imagen nueva.
+              </p>
+            </div>
+            <div className={styles.tecnologias}>
+              <p className={styles.letra}> Tecnologias Utilizadas:</p>
+              <div>
+                <img
+                  src="./svelte.jpg"
+                  width={34}
+                  height={34}
+                  className={styles.tecnologiaIcons}
+                ></img>
+                <img
+                  src="./cloudinary.png"
+                  width={34}
+                  height={34}
+                  className={styles.tecnologiaIcons}
+                ></img>
+                <img
+                  src="./css.png"
+                  width={44}
+                  height={44}
+                  className={styles.tecnologiaIcons}
+                ></img>
+              </div>
+            </div>
+            <div className={styles.foto}>
+              <Image src="/paginaClou.jpeg" width={270} height={171} priority />
+            </div>
+            <a
+              href="https://caro-dev-svg.vercel.app/"
+              className={styles.button}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {" "}
+              Ver Proyecto
+            </a>
+            <br />
+            <br />
+            <br />
             <h2 className={styles.carrusel}>
               Proyecto Grupal <span>-&gt;</span>
             </h2>
