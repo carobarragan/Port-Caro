@@ -10,7 +10,7 @@ export default function About() {
         <div className={styles.imagen}>
           <Image
             src="/perfil.jpeg"
-            // alt="13"
+            alt="13"
             width={240}
             height={271}
             priority

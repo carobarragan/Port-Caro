@@ -7,7 +7,6 @@ import About from "./about";
 import Skill from "./Skill";
 import GithubIcon from "../componentes/About/Github";
 import LinkedInIcon from "../componentes/Linkedln";
-import Proyecto from "./proyectos";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -81,32 +80,9 @@ export default function Home() {
                 :)
               </p>
               <br />
-              <div className={styles.tecnologias}>
-                <p className={styles.letra}> Tecnologias Utilizadas:</p>
-                <div>
-                  <Image
-                    src="./react.jpg"
-                    width={34}
-                    height={34}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                  <Image
-                    src="./css.png"
-                    width={34}
-                    height={34}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                  <Image
-                    src="./github.png"
-                    width={34}
-                    height={34}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                </div>
-              </div>
             </div>
             <div className={styles.foto}>
-              <Image src="/tac.jpg" width={270} height={170}></Image>
+              <Image src="/tac.jpg" alt="13" width={270} height={170}></Image>
               <a
                 href="https://precious-cendol-88d048.netlify.app/"
                 className={styles.button}
@@ -136,32 +112,15 @@ export default function Home() {
                 React + css
               </p>
               <br />
-              <div className={styles.tecnologias}>
-                <p className={styles.letra}> Tecnologias Utilizadas:</p>
-                <div>
-                  <Image
-                    src="./next.svg"
-                    width={44}
-                    height={44}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                  <Image
-                    src="./css.png"
-                    width={34}
-                    height={34}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                  <Image
-                    src="./github.png"
-                    width={34}
-                    height={34}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                </div>
-              </div>
 
               <div className={styles.foto}>
-                <Image src="/SM.jpg" width={270} height={171} priority />
+                <Image
+                  src="/SM.jpg"
+                  alt="13"
+                  width={270}
+                  height={171}
+                  priority
+                />
               </div>
             </div>
             <a
@@ -174,7 +133,7 @@ export default function Home() {
             </a>
           </div>
 
-          <div className={styles.nuevo}>
+          {/* <div className={styles.nuevo}>
             <h2 className={styles.carrusel}>
               New Styles<span>-&gt;</span>
             </h2>
@@ -185,29 +144,7 @@ export default function Home() {
                 imagen nueva.
               </p>
             </div>
-            <div className={styles.tecnologias}>
-              <p className={styles.letra}> Tecnologias Utilizadas:</p>
-              <div>
-                <Image
-                  src="./svelte.jpg"
-                  width={34}
-                  height={34}
-                  className={styles.tecnologiaIcons}
-                ></Image>
-                <Image
-                  src="./cloudinary.png"
-                  width={34}
-                  height={34}
-                  className={styles.tecnologiaIcons}
-                ></Image>
-                <Image
-                  src="./css.png"
-                  width={44}
-                  height={44}
-                  className={styles.tecnologiaIcons}
-                ></Image>
-              </div>
-            </div>
+
             <div className={styles.foto}>
               <Image src="/paginaClou.jpeg" width={270} height={171} priority />
             </div>
@@ -219,10 +156,12 @@ export default function Home() {
             >
               {" "}
               Ver Proyecto
-            </a>
-            <br />
-            <br />
-            <br />
+            </a> */}
+
+          <br />
+          <br />
+          <br />
+          <div className={styles.nuevo}>
             <h2 className={styles.carrusel}>
               Proyecto Grupal <span>-&gt;</span>
             </h2>
@@ -234,62 +173,15 @@ export default function Home() {
                 Huesped,dispone de la adquisición del servicio.
               </p>
               <br />
-              <div className={styles.tecnologias}>
-                <p className={styles.letra}> Tecnologias Utilizadas:</p>
-                <div>
-                  <Image
-                    src="./react.jpg"
-                    width={44}
-                    height={44}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                  <Image
-                    src="./css.png"
-                    width={34}
-                    height={34}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                  <Image
-                    src="./github.png"
-                    width={34}
-                    height={34}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                  <Image
-                    src="./redux.png"
-                    width={34}
-                    height={34}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                  <Image
-                    src="./javascript.png"
-                    width={34}
-                    height={34}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                  <Image
-                    src="./html.png"
-                    width={34}
-                    height={34}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                  <Image
-                    src="./bootstrap.png"
-                    width={34}
-                    height={34}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                  <Image
-                    src="./Tailwind_CSS_Logo.svg.png"
-                    width={34}
-                    height={34}
-                    className={styles.tecnologiaIcons}
-                  ></Image>
-                </div>
-              </div>
             </div>
             <div className={styles.foto}>
-              <Image src="/pg.jpeg" width={270} height={171} priority />
+              <Image
+                src="/pg.jpeg"
+                alt="13"
+                width={270}
+                height={171}
+                priority
+              />
             </div>
             <a
               href="https://wetravel-app.vercel.app/"

@@ -9,6 +9,7 @@ export default function Skill() {
           <Image
             className={styles.imagen}
             src="/html.png"
+            alt="13"
             width={100}
             height={84}
             priority
@@ -20,6 +21,7 @@ export default function Skill() {
           <Image
             className={styles.imagen}
             src="/javascript.png"
+            alt="13"
             width={100}
             height={84}
             priority
@@ -31,6 +33,7 @@ export default function Skill() {
           <Image
             className={styles.imagen}
             src="/github.png"
+            alt="13"
             width={100}
             height={84}
             priority
@@ -41,6 +44,7 @@ export default function Skill() {
           <Image
             className={styles.imagen}
             src="/next.jpg"
+            alt="13"
             width={100}
             height={84}
             priority
@@ -51,6 +55,7 @@ export default function Skill() {
           <Image
             className={styles.imagen}
             src="/redux.png"
+            alt="13"
             width={100}
             height={84}
             priority
@@ -61,6 +66,7 @@ export default function Skill() {
           <Image
             className={styles.imagen}
             src="/node.jpg"
+            alt="13"
             width={100}
             height={84}
             priority
@@ -71,6 +77,7 @@ export default function Skill() {
           <Image
             className={styles.imagen}
             src="/react.jpg"
+            alt="13"
             width={100}
             height={84}
             priority
@@ -81,6 +88,7 @@ export default function Skill() {
           <Image
             className={styles.imagen}
             src="/bootstrap.png"
+            alt="13"
             width={100}
             height={84}
             priority
@@ -91,6 +99,7 @@ export default function Skill() {
           <Image
             className={styles.imagen}
             src="/Tailwind_CSS_Logo.svg.png"
+            alt="13"
             width={100}
             height={84}
             priority
