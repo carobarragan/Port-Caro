@@ -1,18 +1,81 @@
 .main {
+  padding-top: 80px;
+  width: 100%;
+  height: 80%;
+  background-color: #ebeeee;
+  display: grid;
+  flex-direction: column-reverse;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+.main2 {
+  padding-top: 60px;
+  width: 100%;
+  background-color: #ebeeee;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  min-height: 100vh;
+  border: #20b2aa 3px solid;
+}
+.proyectTitulo {
+  font-family: "montserrat";
+  font-size: 30px;
+  margin-bottom: 50px;
+  border-bottom: 3px solid #20b2aa;
+}
+.proyectoContainer {
+  font-family: "montserrat";
+  font-size: 15px;
+  margin-bottom: 50px;
+  /* border-bottom: 3px solid #20b2aa; */
+}
+@media (max-width: 660) {
+  .proyectoContainer {
+    align-items: center;
+    height: 560px;
+    width: 100%;
+    height: 30px;
+  }
+}
+@media (max-width: 750px) {
+  .main2 {
+    width: 75%;
+    margin-right: 1;
+  }
 }
 
+@media (max-width: 1000px) {
+  .proyectoContainer {
+    flex-direction: column-reverse;
+    min-width: 0;
+    position: relative;
+    margin-bottom: 120px;
+  }
+}
+.carrusel2 {
+  width: 100%;
+  height: 300px;
+  font-size: 30px;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.2);
+}
+.a {
+  overflow: inherit;
+  margin-left: 30px;
+  margin-top: 10px;
+  height: 70%;
+  width: 80%;
+  display: block;
+  border-radius: 1px solid black;
+}
 .description {
+  width: 45%;
+  height: 20px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  min-height: 100vh;
+  flex-direction: column;
+  margin-left: 40px;
 }
 
 .description a {
@@ -37,10 +100,8 @@
 }
 
 .grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
-  width: var(--max-width);
-  max-width: 100%;
+  display: block;
+  vertical-align: middle;
 }
 .gridA {
   display: list-item;
@@ -68,7 +129,7 @@
   margin-bottom: 0.7rem;
 }
 
-.card p {
+.texto {
   margin: 0;
   opacity: 0.6;
   font-size: 0.9rem;
@@ -86,7 +147,7 @@
   height: 280px;
 }
 
-.center::before {
+.main2::before {
   background: var(black);
   border-radius: 0%;
   width: 1480px;
@@ -94,15 +155,15 @@
   margin-left: -400px;
 }
 
-.center::after {
+.main2::after {
   background: var(--primary-glow);
   width: 240px;
   height: 180px;
   z-index: -1;
 }
 
-.center::before,
-.center::after {
+.main2::before,
+.main2::after {
   content: "";
   left: 50%;
   position: absolute;
@@ -110,6 +171,7 @@
   transform: translateZ(0);
 }
 .titulo {
+  color: #ebeeee;
   max-width: 24rem;
   font-weight: 600;
   font-size: 2rem;
@@ -130,7 +192,7 @@
   color: black;
   padding: 1rem;
 }
-.button::before {
+.main2::before {
   content: "";
   position: left;
   top: 0;
@@ -383,7 +445,26 @@
 }
 @media (max-width: 700px) {
   .about {
-    padding: 4rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 360px) {
+  .about {
+    flex-direction: column-reverse;
+    align-items: center;
+    max-width: 100%;
+    margin-left: 2px;
+  }
+}
+@media (min-width: 330px) {
+  .main2 {
+    padding: 3rem;
+    width: 75%;
+  }
+}
+@media (max-width: 730px) {
+  .main2 {
+    padding: 3rem;
   }
 }
 .nuevo {
@@ -435,7 +516,7 @@
   cursor: pointer;
 }
 .subtitulo {
-  color: black;
+  color: white;
 
   font-family: "montserrat";
   display: grid;
@@ -443,7 +524,7 @@
   margin-block-end: 2em;
   margin-inline-start: 1px;
   margin-inline-end: 1px;
-  line-height: 30px;
+  line-height: 20px;
   text-align: center;
 
   border-bottom: 3px solid #20b2aa;
@@ -459,14 +540,20 @@
 }
 
 .fondo {
-  width: 100%;
-  height: 100vh;
+  background-image: url("https://i.imgur.com/RS097Vt.jpg");
+  background-position: 50%;
+  padding: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
   overflow: hidden;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
 }
 /* .proyectos {
   display: block;
@@ -523,4 +610,13 @@
   font-size: 15px;
   margin-bottom: 5px;
   border-bottom: 3px solid #20b2aa;
+}
+@media (min-width: 300px) {
+  .main {
+    width: 100%;
+    padding: 2rem;
+    margin-left: 70px;
+    justify-content: center;
+    display: inline;
+  }
 }

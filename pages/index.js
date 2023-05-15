@@ -7,8 +7,9 @@ import About from "./about";
 import Skill from "./Skill";
 import GithubIcon from "../componentes/About/Github";
 import LinkedInIcon from "../componentes/Linkedln";
+import Proyecto from "./Proyectos";
 
-const inter = Inter({ subsets: ["latin"] });
+// const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -56,151 +57,10 @@ export default function Home() {
         </div>
         <br />
         <br />
-        <br />
-        <br />
-        <br />
-
-        <div className={styles.proyectos} class="w-full h-full bg-gray-5">
-          <div
-            className={styles.nuevo}
-            class="flex justify-center items-center"
-          >
-            <h2
-              className={styles.carrusel}
-              class="whitespace-nowrap text-4xl md:text-5xl font-bold mb-8 md:mb-12"
-            >
-              Juego Tic-Tac<span>-&gt;</span>
-            </h2>
-            <div class="flex flex-col md:flex-row text-xl w-full gap-5">
-              <p
-                className={styles.defini}
-                class="flex self-center whitespace-nowrap py-2 px-4 justify-center items-center gap-2 rounded-full hover:bg-white/10 transition-colors mt-8 underline underline-offset-4"
-              >
-                Card de juego, realizado con React + Css; quien no lo ha jugado
-                :)
-              </p>
-              <br />
-            </div>
-            <div className={styles.foto}>
-              <Image src="/tac.jpg" alt="13" width={270} height={170}></Image>
-              <a
-                href="https://precious-cendol-88d048.netlify.app/"
-                className={styles.button}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {" "}
-                Ver Proyecto
-              </a>
-            </div>
-          </div>
+        <div>
+          <Proyecto />
         </div>
-        <br />
-        <br />
-        <br />
-        <div className={styles.proyectos} class="w-full h-full bg-gray-5">
-          <div
-            className={styles.nuevo}
-            class="flex justify-center items-center"
-          >
-            <h2 className={styles.carrusel}>
-              Pagina de Servicio de Moza<span>-&gt;</span>
-            </h2>
-            <div>
-              <p className={styles.defini}>
-                Pagina de servicio realizada con Next.js, que es un framework de
-                React + css
-              </p>
-              <br />
 
-              <div className={styles.foto}>
-                <Image
-                  src="/SM.jpg"
-                  alt="13"
-                  width={270}
-                  height={171}
-                  priority
-                />
-              </div>
-            </div>
-            <a
-              href="https://moza-servicio.vercel.app/"
-              className={styles.button}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Ver Proyecto
-            </a>
-          </div>
-
-          {/* <div className={styles.nuevo}>
-            <h2 className={styles.carrusel}>
-              New Styles<span>-&gt;</span>
-            </h2>
-            <div>
-              <p className={styles.defini}>
-                Les presento una pagina realizada con Cloudinary. Donde podes
-                cargar tu imagen y borrarle el fondo, asi podes descargar la
-                imagen nueva.
-              </p>
-            </div>
-
-            <div className={styles.foto}>
-              <Image src="/paginaClou.jpeg" width={270} height={171} priority />
-            </div>
-            <a
-              href="https://caro-dev-svg.vercel.app/"
-              className={styles.button}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              Ver Proyecto
-            </a> */}
-
-          <br />
-          <br />
-          <br />
-          <div className={styles.nuevo}>
-            <h2 className={styles.carrusel}>
-              Proyecto Grupal <span>-&gt;</span>
-            </h2>
-            <div>
-              <p className={styles.defini}>
-                Es una aplicación de viaje, donde cuenta con tres perfiles;
-                Administrador, este tiene el control total de la aplicación a
-                través de un panel. Anfitrión, pone a disposición el servicio;
-                Huesped,dispone de la adquisición del servicio.
-              </p>
-              <br />
-            </div>
-            <div className={styles.foto}>
-              <Image
-                src="/pg.jpeg"
-                alt="13"
-                width={270}
-                height={171}
-                priority
-              />
-            </div>
-            <a
-              href="https://wetravel-app.vercel.app/"
-              className={styles.button}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {" "}
-              Ver Proyecto
-            </a>
-          </div>
-
-          <a
-            href="https://certificates.soyhenry.com/cert?id=b8a0a083-5052-4128-b832-6fdb4dfc8201"
-            className={styles.card}
-            target="_blank"
-            rel="noopener noreferrer"
-          ></a>
-        </div>
         <div className={styles}>
           <Skill></Skill>
         </div>
