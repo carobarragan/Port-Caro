@@ -102,45 +102,47 @@ export default function Proyecto() {
                 Ver Proyecto
               </a>
             </div>
-          </div>
-        </div>
 
-        <a
-          href="https://certificates.soyhenry.com/cert?id=b8a0a083-5052-4128-b832-6fdb4dfc8201"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        ></a>
-      </div>
-      <div className={styles.proyectoContainer}>
-        <div className={styles.a}>
-          <h2>
-            Formulario<span>-&gt;</span>
-          </h2>
-          <div className={styles.a}>
-            <p className={styles.texto}>
-              Formulario de contacto con conexión a base de datos + vercel ship.
-              en este formulario utiliza Sonner una biblioteca de React para
-              mostrar la notificacion del mensaje junto a un confetti{" "}
-            </p>
-            <br />
-          </div>
-          <div>
-            <video
-              src="/formulario.mp4"
-              alt="13"
-              width={270}
-              height={170}
-            ></video>
             <a
-              href="https://formulario-wheat-one.vercel.app/"
-              className={styles.button}
+              href="https://certificates.soyhenry.com/cert?id=b8a0a083-5052-4128-b832-6fdb4dfc8201"
+              className={styles.card}
               target="_blank"
               rel="noopener noreferrer"
-            >
-              {" "}
-              Ver Proyecto
-            </a>
+            ></a>
+          </div>
+          <div className={styles.proyectoContainer}>
+            <div>
+              <h2 className={styles.a}>
+                Formulario<span>-&gt;</span>
+              </h2>
+              <div>
+                <p className={styles.texto}>
+                  Formulario de contacto con conexión a base de datos + vercel
+                  ship. en este formulario utiliza Sonner una biblioteca de
+                  React para mostrar la notificacion del mensaje junto a un
+                  confetti{" "}
+                </p>
+                <br />
+              </div>
+              <div>
+                <video
+                  src="/formulario.mp4"
+                  controls
+                  alt="13"
+                  width={270}
+                  height={170}
+                ></video>
+                <a
+                  href="https://formulario-wheat-one.vercel.app/"
+                  className={styles.button}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  Ver Proyecto
+                </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

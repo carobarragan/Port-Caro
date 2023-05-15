@@ -66,6 +66,7 @@
   font-family: "montserrat";
   font-size: 2rem;
   margin-top: 40px;
+  display: flex;
 }
 .titulo:hover {
   opacity: 0.7;
