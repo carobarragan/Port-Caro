@@ -26,13 +26,15 @@ export default function Home() {
             {" "}
             Carolina Barragán
           </div>
-          <div className={styles.subtitulo}>
+          {/* <div className={styles.subtitulo}>
             <p>
               Una desarrolladora Full Stack muy apasionada y motivada con agiles
               Metodologias. Siempre lista para aplicar lo que sé y aprender
               sobre lo que no sé 💻.
             </p>
-          </div>
+          </div> */}
+          <br />
+          <br />
           <div className={styles.icons}>
             <a
               href="https://github.com/carobarragan"
