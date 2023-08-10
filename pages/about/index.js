@@ -10,10 +10,10 @@ export default function About() {
         <div className={styles.imagen}>
           <Image
             src="/perfil.jpeg"
-            alt="13"
-            width={240}
+            //   alt="13"
+            width={250}
             height={271}
-            priority
+            //   priority
           />
         </div>
         <div className={styles.textContainer}>
